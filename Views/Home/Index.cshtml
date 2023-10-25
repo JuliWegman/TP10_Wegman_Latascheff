@@ -6,10 +6,10 @@
   <img src="@a.ImagenSerie" class="card-img-top" alt="...">
     <h5 class="card-text">@a.Nombre</h5>
   <div class="card-body">
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>    <button class="btn btn-primary">Actores</button>
-    <button class="btn btn-primary">Más info</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="MostrarTemporadas(@a.IdSerie)"> Temporadas</button>    
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="MostrarActores(@a.IdSerie)">Actores</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="MostrarInfo(@a.IdSerie)">Más info</button>
+
   </div>
 </div>
 
@@ -22,10 +22,10 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <h1 class="modal-title fs-5" id="Titulo__Modal">Modal title</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" id="Contenido__Modal">
         ...
       </div>
       <div class="modal-footer">
